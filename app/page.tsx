@@ -283,10 +283,59 @@ export default function Home() {
                       </Link>
                     </Button>
     
-
+                    <div className="hidden mt-4 sm:flex flex-nowrap items-center justify-center gap-1 overflow-x-auto  sm:text-sm text-gray-500 whitespace-nowrap">
+  <div className="flex items-center gap-[2px] sm:gap-1">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      className="h-3 w-3 sm:h-4 sm:w-4 text-blue-500"
+    >
+      <path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20z" />
+      <path d="m9 12 2 2 4-4" />
+    </svg>
+    <span>Price Match Guarantee</span>
+  </div>
+  <div className="flex items-center gap-[2px] sm:gap-1">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      className="h-3 w-3 sm:h-4 sm:w-4 text-blue-500"
+    >
+      <path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20z" />
+      <path d="m9 12 2 2 4-4" />
+    </svg>
+    <span>No Hidden Fees</span>
+  </div>
+  <div className="flex items-center gap-[2px] sm:gap-1">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      className="h-3 w-3 sm:h-4 sm:w-4 text-blue-500"
+    >
+      <path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20z" />
+      <path d="m9 12 2 2 4-4" />
+    </svg>
+    <span>Free Cancellation</span>
+  </div>
+</div>
                   </div>
                   <div>
-                  <div className="mt-4 flex flex-nowrap items-center justify-center gap-1 overflow-x-auto text-[10px] sm:text-xs text-gray-500 whitespace-nowrap">
+                  <div className="mt-4 flex sm:hidden flex-nowrap items-center justify-center gap-1 overflow-x-auto text-[10px] sm:text-xs text-gray-500 whitespace-nowrap">
   <div className="flex items-center gap-[2px] sm:gap-1">
     <svg
       xmlns="http://www.w3.org/2000/svg"
