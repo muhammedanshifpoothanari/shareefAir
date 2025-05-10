@@ -26,7 +26,7 @@ export default function Home() {
 
             <div className="relative mx-auto mt-8 max-w-5xl rounded-2xl bg-white p-6 shadow-lg">
               <Tabs defaultValue="flights" className="w-full">
-                <TabsList className="mb-6 grid w-full grid-cols-4">
+                <TabsList className="mb-6 grid w-full grid-cols-4 ">
                   <TabsTrigger value="flights" className="flex items-center gap-2">
                     <Plane className="h-4 w-4" />
                     Flights
@@ -75,7 +75,7 @@ export default function Home() {
                     </svg>
                     Cars
                   </TabsTrigger>
-                  <TabsTrigger value="support" className="flex items-center gap-2">
+                  {/* <TabsTrigger value="support" className="flex items-center gap-2">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="16"
@@ -91,7 +91,7 @@ export default function Home() {
                       <path d="M18 18.72a9.094 9.094 0 0 0 3.741-.479 3 3 0 0 0-4.682-2.72m.94 3.198.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0 1 12 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 0 1 6 18.719m12 0a5.971 5.971 0 0 0-.941-3.197m0 0A5.995 5.995 0 0 0 12 12.75a5.995 5.995 0 0 0-5.058 2.772m0 0a3 3 0 0 0-4.681 2.72 8.986 8.986 0 0 0 3.74.477m.94-3.197a5.971 5.971 0 0 0-.94 3.197M15 6.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0zm6 3a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0zm-13.5 0a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0z" />
                     </svg>
                     Customer Support
-                  </TabsTrigger>
+                  </TabsTrigger> */}
                 </TabsList>
 
                 <TabsContent value="flights" className="space-y-6">
@@ -132,18 +132,19 @@ export default function Home() {
                         From
                       </Label>
                       <Input id="from" placeholder="Origin" className="h-12" />
-                    </div>
-
-                    <div className="flex items-center mt-10">
+                      <div className="flex items-center mt-10">
                     
                        
-<svg width="32" height="32" version="1.1" viewBox="0 0 1200 1200" xmlns="http://www.w3.org/2000/svg">
- <path d="m578.88 620.81h-53.516l26.594-177.54c-23.48-1.207-46.672-3.168-67.602-5.7188l-46.844 60.441h-34.637l11.27-74.172c-14.738-4.7031-28.992-11.398-28.992-26.156 0-14.559 14.691-22.152 29.016-27.035l-11.27-74.891 34.625-0.03125 46.844 60.863c24.008-3 46.203-5.0469 67.57-6.2344l-26.602-177.41h53.527l92.992 176.34c57.727 1.457 101.34 5.4688 129.67 11.93 32.312 7.3711 48.023 19.113 48.023 35.902 0 16.805-15.719 28.539-48.051 35.867-28.258 6.4062-71.871 10.395-129.66 11.859zm-41.23-10.582h34.852l92.883-175.83 3.1055-0.074219c58.633-1.3828 102.6-5.3125 130.68-11.676 26.414-5.9883 39.809-14.582 39.809-25.547 0-10.957-13.387-19.562-39.793-25.586-28.145-6.418-72.109-10.371-130.67-11.742l-3.1055-0.074219-92.922-176.19h-34.855l26.512 176.81-5.8438 0.28516c-23.77 1.1523-48.496 3.3945-75.602 6.8477l-3.0117 0.38281-47.363-61.539-17.125 0.015625 10.785 71.672-4.3398 1.3477c-23.219 7.207-25.902 13.918-25.902 18.336 0 6.9727 7.2422 11.844 25.832 17.363l4.418 1.3125-10.797 71.062h17.137l47.359-61.109 2.9961 0.375c23.148 2.9141 49.297 5.0977 75.621 6.3047l5.8594 0.26953z"/>
- <path d="m722.39 942.21h-42.309l-92.926-175.89c-59.223-1.3867-103.68-5.3594-132.13-11.809-29.004-6.5781-43.102-16.281-43.102-29.668 0-13.387 14.094-23.109 43.082-29.719 28.516-6.5039 72.969-10.492 132.14-11.859l92.93-176.27h42.336l-26.523 177.04c24.297 1.1484 49.75 3.4453 77.68 7.0078l47.145-61.27 24.125 0.019532-10.965 72.938c14.215 4.3086 29.727 10.789 29.727 22.633 0 10.672-11.316 16.301-29.715 21.676l10.961 72.312h-24.121l-47.141-60.84c-23.762 3.0078-50.559 5.2344-77.738 6.4609zm-35.934-10.582h23.645l-26.469-176.71 9.4023-0.40234c28.148-1.207 55.949-3.5039 80.398-6.6406l4.8047-0.61328 47.668 61.523h6.625l-10.512-69.352 7.1719-2.0391c15.805-4.4961 23.816-8.5391 23.816-12.012 0-1-1.1523-6.332-23.895-13.008l-7.0859-2.0781 10.508-69.914-6.625-0.007813-47.672 61.953-4.8242-0.62109c-29.008-3.7305-55.293-6.082-80.352-7.1953l-9.3906-0.41406 26.445-176.51h-23.664l-92.859 176.12-4.9766 0.11328c-59.086 1.3242-103.25 5.2344-131.27 11.625-22.148 5.0508-34.852 12.121-34.852 19.398 0 7.2734 12.707 14.324 34.859 19.348 27.965 6.3398 72.133 10.234 131.27 11.578l4.9688 0.11328 2.3242 4.3945z"/>
-</svg>
+                    <svg width="32" height="32" version="1.1" viewBox="0 0 1200 1200" xmlns="http://www.w3.org/2000/svg">
+                     <path d="m578.88 620.81h-53.516l26.594-177.54c-23.48-1.207-46.672-3.168-67.602-5.7188l-46.844 60.441h-34.637l11.27-74.172c-14.738-4.7031-28.992-11.398-28.992-26.156 0-14.559 14.691-22.152 29.016-27.035l-11.27-74.891 34.625-0.03125 46.844 60.863c24.008-3 46.203-5.0469 67.57-6.2344l-26.602-177.41h53.527l92.992 176.34c57.727 1.457 101.34 5.4688 129.67 11.93 32.312 7.3711 48.023 19.113 48.023 35.902 0 16.805-15.719 28.539-48.051 35.867-28.258 6.4062-71.871 10.395-129.66 11.859zm-41.23-10.582h34.852l92.883-175.83 3.1055-0.074219c58.633-1.3828 102.6-5.3125 130.68-11.676 26.414-5.9883 39.809-14.582 39.809-25.547 0-10.957-13.387-19.562-39.793-25.586-28.145-6.418-72.109-10.371-130.67-11.742l-3.1055-0.074219-92.922-176.19h-34.855l26.512 176.81-5.8438 0.28516c-23.77 1.1523-48.496 3.3945-75.602 6.8477l-3.0117 0.38281-47.363-61.539-17.125 0.015625 10.785 71.672-4.3398 1.3477c-23.219 7.207-25.902 13.918-25.902 18.336 0 6.9727 7.2422 11.844 25.832 17.363l4.418 1.3125-10.797 71.062h17.137l47.359-61.109 2.9961 0.375c23.148 2.9141 49.297 5.0977 75.621 6.3047l5.8594 0.26953z"/>
+                     <path d="m722.39 942.21h-42.309l-92.926-175.89c-59.223-1.3867-103.68-5.3594-132.13-11.809-29.004-6.5781-43.102-16.281-43.102-29.668 0-13.387 14.094-23.109 43.082-29.719 28.516-6.5039 72.969-10.492 132.14-11.859l92.93-176.27h42.336l-26.523 177.04c24.297 1.1484 49.75 3.4453 77.68 7.0078l47.145-61.27 24.125 0.019532-10.965 72.938c14.215 4.3086 29.727 10.789 29.727 22.633 0 10.672-11.316 16.301-29.715 21.676l10.961 72.312h-24.121l-47.141-60.84c-23.762 3.0078-50.559 5.2344-77.738 6.4609zm-35.934-10.582h23.645l-26.469-176.71 9.4023-0.40234c28.148-1.207 55.949-3.5039 80.398-6.6406l4.8047-0.61328 47.668 61.523h6.625l-10.512-69.352 7.1719-2.0391c15.805-4.4961 23.816-8.5391 23.816-12.012 0-1-1.1523-6.332-23.895-13.008l-7.0859-2.0781 10.508-69.914-6.625-0.007813-47.672 61.953-4.8242-0.62109c-29.008-3.7305-55.293-6.082-80.352-7.1953l-9.3906-0.41406 26.445-176.51h-23.664l-92.859 176.12-4.9766 0.11328c-59.086 1.3242-103.25 5.2344-131.27 11.625-22.148 5.0508-34.852 12.121-34.852 19.398 0 7.2734 12.707 14.324 34.859 19.348 27.965 6.3398 72.133 10.234 131.27 11.578l4.9688 0.11328 2.3242 4.3945z"/>
+                    </svg>
+                    
+                                       
+                     </div>
+                    </div>
 
-                   
- </div>
+                  
                     <div className="space-y-2 lg:col-span-1">
                       <Label htmlFor="to" className="text-sm font-medium">
                         To
@@ -281,56 +282,61 @@ export default function Home() {
                         <span className="sr-only">Search</span>
                       </Link>
                     </Button>
-                    <div className="mt-4 flex flex-wrap items-center justify-center gap-3 text-xs text-gray-500">
-                      <div className="flex items-center gap-1">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          viewBox="0 0 24 24"
-                          fill="none"
-                          stroke="currentColor"
-                          strokeWidth="2"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          className="h-4 w-4 text-blue-500"
-                        >
-                          <path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20z" />
-                          <path d="m9 12 2 2 4-4" />
-                        </svg>
-                        <span>Price Match Guarantee</span>
-                      </div>
-                      <div className="flex items-center gap-1">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          viewBox="0 0 24 24"
-                          fill="none"
-                          stroke="currentColor"
-                          strokeWidth="2"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          className="h-4 w-4 text-blue-500"
-                        >
-                          <path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20z" />
-                          <path d="m9 12 2 2 4-4" />
-                        </svg>
-                        <span>No Hidden Fees</span>
-                      </div>
-                      <div className="flex items-center gap-1">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          viewBox="0 0 24 24"
-                          fill="none"
-                          stroke="currentColor"
-                          strokeWidth="2"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          className="h-4 w-4 text-blue-500"
-                        >
-                          <path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20z" />
-                          <path d="m9 12 2 2 4-4" />
-                        </svg>
-                        <span>Free Cancellation</span>
-                      </div>
-                    </div>
+    
+
+                  </div>
+                  <div>
+                  <div className="mt-4 flex flex-nowrap items-center justify-center gap-1 overflow-x-auto text-[10px] sm:text-xs text-gray-500 whitespace-nowrap">
+  <div className="flex items-center gap-[2px] sm:gap-1">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      className="h-3 w-3 sm:h-4 sm:w-4 text-blue-500"
+    >
+      <path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20z" />
+      <path d="m9 12 2 2 4-4" />
+    </svg>
+    <span>Price Match Guarantee</span>
+  </div>
+  <div className="flex items-center gap-[2px] sm:gap-1">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      className="h-3 w-3 sm:h-4 sm:w-4 text-blue-500"
+    >
+      <path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20z" />
+      <path d="m9 12 2 2 4-4" />
+    </svg>
+    <span>No Hidden Fees</span>
+  </div>
+  <div className="flex items-center gap-[2px] sm:gap-1">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      className="h-3 w-3 sm:h-4 sm:w-4 text-blue-500"
+    >
+      <path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20z" />
+      <path d="m9 12 2 2 4-4" />
+    </svg>
+    <span>Free Cancellation</span>
+  </div>
+</div>
+
                   </div>
                 </TabsContent>
 
